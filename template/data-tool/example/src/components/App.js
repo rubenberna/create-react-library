@@ -1,12 +1,12 @@
 import React, { Suspense, lazy } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { metadata } from 'data-tool-template'
+import { metadata } from '{{name}}'
 import { Home } from './Home';
 import { SideNav } from '../SideNav';
 import { convertToKebabCase } from '../utils/_general.util';
-import 'data-tool-template/dist/index.css'
+import '{{name}}/dist/index.css'
 
-const Component = lazy(() => import('data-tool-template'))
+const Component = lazy(() => import('{{name}}'))
 
 const dummyState = {
   isAuthenticated: true,
